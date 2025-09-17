@@ -1,0 +1,133 @@
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ff4d6d;
+      color: white;
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      position: relative;
+      z-index: 10;
+    }
+    section {
+      padding: 40px 20px;
+      position: relative;
+      z-index: 5;
+    }
+    .hero {
+      font-size: 2em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    /* Birthday Girl Section */
+    .birthday-girl {
+      margin: 20px auto;
+      max-width: 300px;
+    }
+    .birthday-girl img {
+      width: 100%;
+      border-radius: 50%;
+      border: 6px solid #ff4d6d;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      animation: zoomIn 2s ease-in-out;
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .birthday-girl h2 {
+      margin-top: 15px;
+      color: #ff3366;
+    }
+    /* Slideshow */
+    .slideshow {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .slideshow img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: none;
+    }
+    .slideshow img.active {
+      display: block;
+      animation: fade 1.5s;
+    }
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+    .wishes {
+      background: #fff0f6;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .special {
+      margin-top: 40px;
+      font-size: 1.5em;
+      color: #ff3366;
+      font-weight: bold;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    footer {
+      background: #ff4d6d;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+      position: relative;
+      z-index: 10;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff3366;
+    }
+    /* Falling Hearts */
+    .heart {
+      position: fixed;
+      top: -10px;
+      color: #ff4d6d;
+      font-size: 24px;
+      animation: fall 5s linear infinite;
+      z-index: 1;
+      user-select: none;
+    }
+    @keyframes fall {
+      to {
+        transform: translateY(110vh);
+        opacity: 0;
+      }
+    }
+  
